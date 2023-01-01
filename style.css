@@ -1,0 +1,161 @@
+body {
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  background-color: #fca5a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #fee2e2;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.login {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+#container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookstore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #f43f5e;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fb7185;
+  color: #ffff;
+}
+
+.books {
+  margin: 20px auto;
+  width: 80%;
+  height: auto;
+  background-color: #fee2e2;
+}
+
+#book-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  height: 300px;
+  background-color: #d946ef;
+  border-radius: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin: 20px auto;
+}
+
+.rotate {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+}
+
+.rotate:hover {
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+/* style the form input */
+#book,
+#name {
+  width: 60%;
+  height: 20px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#save,
+#data {
+  width: 120px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#save:hover {
+  color: #ffff;
+}
+
+#data:hover {
+  color: #ffff;
+}
+
+.add {
+  width: 24px;
+  height: 24px;
+}
+
+/* .hidden {
+  display: none;
+} */
