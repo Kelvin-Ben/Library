@@ -18,30 +18,68 @@
       <div id="title">LIBRARY APP</div>
       <button type="button" class="btn login">LOGIN</button>
     </header>
-    <main id="container">
-      <section class="bookstore">
-        <div class="books"></div>
+    <div id="wrapper">
+      <!-- <div class="box"></div> -->
+    </div>
+    <section class="section__1">
+      <button type="button" class="btn add-book">
+        <svg class="add" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+          />
+        </svg>
+        ADD NEW BOOK
+      </button>
+    </section>
+    <section class="section__1 bookstore">
+      <div class="container">
         <form class="hidden form">
           <h2>Welcome to this form</h2>
-          <input type="text" id="book" placeholder="Book Title" />
-          <input type="text" id="name" placeholder="Author Name" />
-          <div class="buttons">
-            <input type="button" id="save" value="save" onclick="saveData()" />
-            <input type="button" id="data" value="show data" onclick="displaydate()" />
+          <div class="field">
+            <label for="title">Book Title:</label>
+            <input
+              type="text"
+              id="title"
+              name="book"
+              placeholder="Enter Book Title"
+            />
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="name">Author Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="author"
+              placeholder="Enter Author Name"
+            />
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="field">Pages:</label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Enter the number of pages"
+            />
+          </div>
+          <div class="field">
+            <label for="field">Read:</label>
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Enter the number of pages"
+            />
           </div>
         </form>
-        <button type="button"  class="btn add-book">
-          <svg class="add" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
-            />
-          </svg>
-          ADD NEW BOOK
-        </button>
-      </section>
-    </main>
-      <footer>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer">
         For more details visit
         <span class="rotate">
           <a href="https://github.com/Kelvin-Ben/Library">
@@ -53,7 +91,9 @@
             </svg>
           </a>
         </span>
-      </footer>
+      </div>
+      <h5>Copyright &copy; 2023 Kelvin-Ben. All rights reserved</h5>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
