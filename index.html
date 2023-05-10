@@ -32,48 +32,36 @@
         ADD NEW BOOK
       </button>
     </section>
-    <section class="section__1 bookstore">
+    <section class="section__2 visible bookstore">
       <div class="container">
-        <form class="hidden form">
-          <h2>Welcome to this form</h2>
-          <div class="field">
-            <label for="title">Book Title:</label>
+        <form class="form">
+          <h2>Welcome, Please add your books</h2>
             <input
               type="text"
-              id="title"
+              class="inputs"
               name="book"
               placeholder="Enter Book Title"
             />
-            <small></small>
-          </div>
-          <div class="field">
-            <label for="name">Author Name:</label>
             <input
               type="text"
-              id="name"
+              class="inputs"
               name="author"
               placeholder="Enter Author Name"
             />
-            <small></small>
-          </div>
-          <div class="field">
-            <label for="field">Pages:</label>
             <input
               type="text"
-              id=""
+              class="inputs"
               name=""
               placeholder="Enter the number of pages"
             />
-          </div>
-          <div class="field">
-            <label for="field">Read:</label>
-            <input
-              type="text"
-              id=""
-              name=""
-              placeholder="Enter the number of pages"
-            />
-          </div>
+            <label>
+              <input
+              type="checkbox"
+              class="mycheckbox"
+              />
+              <span id="checkboxLabel">No</span>
+            </label>
+            <button class="btn__submit" type="submit">Submit</button>
         </form>
       </div>
     </section>
