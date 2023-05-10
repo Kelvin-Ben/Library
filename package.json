@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Kelvin-Ben/Library#readme",
   "devDependencies": {
     "prettier": "2.8.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
