@@ -30,6 +30,9 @@ body {
   font-size: 20px;
   margin: 0 20px;
 }
+.section__2 {
+  width: 80%;
+}
 
 .bookstore {
   display: flex;
@@ -38,6 +41,13 @@ body {
   justify-content: center;
   height: 50vh;
   gap: 20px;
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.visible {
+  opacity: 1;
 }
 
 footer {
@@ -75,19 +85,21 @@ footer {
   color: #ffff;
 }
 
-.books {
-  margin: 20px auto;
-  width: 80%;
-  height: auto;
-  background-color: #fee2e2;
+.btn__submit {
+  background-color: #4cc9f0;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  color: #ffff;
+  line-height: 1.5;
+  font-size: 1rem;
 }
-
-#book-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.btn__submit:hover{
+  cursor: pointer;
+  background-color: #219ebc;
+  color: #fff;
 }
-
 .form {
   display: flex;
   flex-direction: column;
@@ -95,9 +107,9 @@ footer {
   justify-content: space-around;
   width: 100%;
   height: 300px;
-  background-color: #d946ef;
+  background-color: #023047;
   border-radius: 50px;
-  opacity: 0;
+  color: #ffff;
 }
 
 .buttons {
@@ -159,6 +171,7 @@ footer {
 }
 
 .container {
+  margin-top: 20px;
   width: 80%;
   height: fit-content;
   display: flex;
@@ -166,9 +179,13 @@ footer {
   align-items: center;
 }
 
-.field {
+.inputs {
   width: 50%;
-  display: flex;
+  height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: #caf0f8;
 }
 /* styling the books container */
 #wrapper {
