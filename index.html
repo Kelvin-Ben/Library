@@ -32,31 +32,38 @@
         ADD NEW BOOK
       </button>
     </section>
-    <section class="section__2 visible bookstore">
+    <section class="section__2">
       <div class="container">
         <form class="form">
           <h2>Welcome, Please add your books</h2>
             <input
               type="text"
               class="inputs"
+              id="book"
               name="book"
               placeholder="Enter Book Title"
+              required
             />
             <input
               type="text"
               class="inputs"
+              id="name"
               name="author"
               placeholder="Enter Author Name"
+              required
             />
             <input
-              type="text"
+              type="number"
               class="inputs"
+              id="pages"
               name=""
               placeholder="Enter the number of pages"
+              required
             />
-            <label>
+            <label>Have you read it?
               <input
               type="checkbox"
+              id="confirm"
               class="mycheckbox"
               />
               <span id="checkboxLabel">No</span>
@@ -70,7 +77,7 @@
       <div id="footer">
         For more details visit
         <span class="rotate">
-          <a href="https://github.com/Kelvin-Ben/Library">
+          <a href="https://github.com/Kelvin-Ben/Library" target="_blank">
             <svg class="github" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
