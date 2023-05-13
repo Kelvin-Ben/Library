@@ -30,31 +30,24 @@ body {
   font-size: 20px;
   margin: 0 20px;
 }
-.section__2 {
-  width: 80%;
-}
 
-.bookstore {
-  display: flex;
+
+.section__2 {
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 80%;
   height: 50vh;
-  gap: 20px;
-}
-.hidden {
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-}
-.visible {
-  opacity: 1;
 }
 
 footer {
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  top: 550px;
   height: 250px;
   background-color: #023047;
   width: 100%;
@@ -138,7 +131,7 @@ footer {
 
 /* style the form input */
 #book,
-#name {
+#name, #pages {
   width: 60%;
   height: 20px;
   border: none;
@@ -174,11 +167,8 @@ footer {
   margin-top: 20px;
   width: 80%;
   height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
 }
-
 .inputs {
   width: 50%;
   height: 1.5rem;
