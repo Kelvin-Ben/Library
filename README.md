@@ -10,6 +10,8 @@ The Library Application is a web-based application built with JavaScript that al
 - **Search and Filtering:** Users can search for books in their library based on various criteria, such as title, author, or genre.
 - **Book Editing and Removal:** Users can update book details or remove books from their library as needed.
 - **Responsive Design:** The application is designed to be responsive and compatible with different devices, ensuring a seamless experience across desktop and mobile platforms.
+## Live Demo
+**After the project is completed, a live demo will be made available.**
 ### Getting Started
 > To set up and run the Library Application locally, follow these steps:
 - **Clone the repository:** Clone this repository to your local machine using the command:
