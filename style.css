@@ -30,25 +30,35 @@ body {
   font-size: 20px;
   margin: 0 20px;
 }
-
-
-.section__2 {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 50vh;
+.section__1 {
+  border: 1px solid red;
 }
-
-footer {
-  position: fixed;
+.section__2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 550px;
-  height: 250px;
+  width: 80%;
+  height: 400px;
+}
+.section2__hidden {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 85%;
+  height: 100px;
+  /* margin: 2rem; */
+  /* padding: 0 0.5rem; */
+  border: 1px solid rebeccapurple;
+  opacity: 0;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* top: 550px; */
+  height: 100px;
   background-color: #023047;
   width: 100%;
 }
@@ -88,7 +98,7 @@ footer {
   line-height: 1.5;
   font-size: 1rem;
 }
-.btn__submit:hover{
+.btn__submit:hover {
   cursor: pointer;
   background-color: #219ebc;
   color: #fff;
@@ -103,6 +113,12 @@ footer {
   background-color: #023047;
   border-radius: 50px;
   color: #ffff;
+  /* transition: all 0.5s ease-out; */
+}
+.container.hidden {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
 }
 
 .buttons {
@@ -131,7 +147,8 @@ footer {
 
 /* style the form input */
 #book,
-#name, #pages {
+#name,
+#pages {
   width: 60%;
   height: 20px;
   border: none;
@@ -168,6 +185,8 @@ footer {
   width: 80%;
   height: fit-content;
   display: block;
+  border: 1px solid red;
+  /* opacity: 0; */
 }
 .inputs {
   width: 50%;
@@ -186,6 +205,7 @@ footer {
   /* justify-content: space-between; */
   /* border: 2px solid cyan; */
   /* height: 100vh; */
+  margin-bottom: 1.5rem;
 }
 .box {
   display: flex;
@@ -194,11 +214,25 @@ footer {
   background-color: #d946ef;
   margin-bottom: 10px;
   border-radius: 5px;
-  width: 20rem;
-  height: 15rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 18rem;
+  height: 13rem;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
+  /* border: 2px solid green; */
 }
 .box:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+}
+#book__details {
+  list-style-type: none;
+  width: 80%;
+  /* border: 1px solid yellow; */
+  height: 13rem;
+}
+.books {
+  display: flex;
+  flex-direction: column;
+}
+.books .book_info {
+  margin-top: 1.2rem;
 }
