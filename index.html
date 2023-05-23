@@ -19,10 +19,50 @@
       <button type="button" class="btn login">LOGIN</button>
     </header>
     <div id="wrapper">
-      <!-- <div class="box"></div> -->
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+     
     </div>
     <section class="section__1">
-      <button type="button" class="btn add-book">
+      <button type="button" class="btn" id="add-book">
         <svg class="add" viewBox="0 0 24 24">
           <path
             fill="currentColor"
@@ -32,43 +72,40 @@
         ADD NEW BOOK
       </button>
     </section>
-    <section class="section__2">
+    <section class="section2__hidden">
       <div class="container">
         <form class="form">
           <h2>Welcome, Please add your books</h2>
-            <input
-              type="text"
-              class="inputs"
-              id="book"
-              name="book"
-              placeholder="Enter Book Title"
-              required
-            />
-            <input
-              type="text"
-              class="inputs"
-              id="name"
-              name="author"
-              placeholder="Enter Author Name"
-              required
-            />
-            <input
-              type="number"
-              class="inputs"
-              id="pages"
-              name=""
-              placeholder="Enter the number of pages"
-              required
-            />
-            <label>Have you read it?
-              <input
-              type="checkbox"
-              id="confirm"
-              class="mycheckbox"
-              />
-              <span id="checkboxLabel">No</span>
-            </label>
-            <button class="btn__submit" type="submit">Submit</button>
+          <input
+            type="text"
+            class="inputs"
+            id="book"
+            name="book"
+            placeholder="Enter Book Title"
+            required
+          />
+          <input
+            type="text"
+            class="inputs"
+            id="name"
+            name="author"
+            placeholder="Enter Author Name"
+            required
+          />
+          <input
+            type="number"
+            class="inputs"
+            id="pages"
+            name=""
+            placeholder="Enter the number of pages"
+            required
+          />
+          <label
+            >Have you read it?
+            <input type="checkbox" id="confirm" class="mycheckbox" />
+            <span id="checkboxLabel">No</span>
+          </label>
+          <button class="btn__submit" type="submit">Submit</button>
         </form>
       </div>
     </section>
