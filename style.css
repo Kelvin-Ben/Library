@@ -40,17 +40,19 @@ body {
   justify-content: center;
   width: 80%;
   height: 400px;
+  border: 1px solid green;
+  margin: 1rem;
 }
 .section2__hidden {
   display: flex;
   /* align-items: center; */
   justify-content: center;
   width: 85%;
-  height: 100px;
-  /* margin: 2rem; */
+  height: 50px;
+  margin: 1rem;
   /* padding: 0 0.5rem; */
-  border: 1px solid rebeccapurple;
-  opacity: 0;
+  border: 1px solid red;
+  /* opacity: 0; */
 }
 footer {
   display: flex;
@@ -115,11 +117,6 @@ footer {
   color: #ffff;
   /* transition: all 0.5s ease-out; */
 }
-.container.hidden {
-  height: 0;
-  margin-bottom: 0;
-  opacity: 0;
-}
 
 .buttons {
   display: flex;
@@ -179,8 +176,10 @@ footer {
   width: 24px;
   height: 24px;
 }
-
 .container {
+  display: none;
+}
+.form__container {
   margin-top: 20px;
   width: 80%;
   height: fit-content;
