@@ -12,17 +12,13 @@ const inputPage = document.getElementById("pages");
 const inputConfirm = document.getElementById("confirm");
 
 
-document.addEventListener("click", function (event) {
-  if (!section2.contains(event.target) && event.target !== addBook) {
-  section2.classList.add("section2__hidden");
-  }
-});
 // there is a problem with this event
-// addBook.addEventListener("click", function () {
-//   section2.classList.toggle("section2__hidden");
-//   section2.classList.toggle("section__2");
-//   console.log("clicked");
-// });
+addBook.addEventListener("click", function () {
+section2.classList.add('section__2');
+section2.classList.remove('section2__hidden');
+showForm.classList.add("form__container");
+  console.log("clicked");
+});
 checkbox.addEventListener("change", function () {
   if (checkbox.checked) {
     checkBoxLabel.textContent = "Yes";
@@ -34,15 +30,13 @@ checkbox.addEventListener("change", function () {
 function hideForm() {
    // clear the form after submit
    inputBook.value = inputName.value = inputPage.value = "";
+   section2.classList.add("section2__hidden");
+   showForm.style.opacity = 0;
 }
 
 let myLibrary = [];
-// function Book() {
-
-// }
 function addBookToLibrary(event) {
   event.preventDefault();
-
   // create book object
   const book = {
     title: inputBook.value,
@@ -50,11 +44,9 @@ function addBookToLibrary(event) {
     page: inputPage.value,
     isRead: inputConfirm.value,
   };
-
- 
   // Add book object to the array
   myLibrary.push(book);
   console.log(myLibrary);
-  // hideForm()
+  hideForm()
 }
 form.addEventListener("submit", addBookToLibrary);
