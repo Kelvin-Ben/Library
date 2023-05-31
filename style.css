@@ -3,12 +3,8 @@ body {
   font-weight: 800;
   margin: 0;
   padding: 0;
-  background-color: #8ecae6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #f1faee;
 }
-
 #header {
   display: flex;
   flex-direction: row;
@@ -16,8 +12,8 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 80px;
-  background-color: #a2d2ff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #a8dadc;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
 
@@ -30,38 +26,16 @@ body {
   font-size: 20px;
   margin: 0 20px;
 }
-.section__1 {
-  border: 1px solid red;
-}
-.section__2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 400px;
-  border: 1px solid green;
-  margin: 1rem;
-}
-.section2__hidden {
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  width: 85%;
-  height: 50px;
-  margin: 1rem;
-  /* padding: 0 0.5rem; */
-  border: 1px solid red;
-  /* opacity: 0; */
-}
+
+
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* top: 550px; */
-  height: 100px;
-  background-color: #023047;
+  height: 150px;
+  background-color: #a8dadc;
   width: 100%;
 }
 #footer {
@@ -79,15 +53,53 @@ footer {
   width: 200px;
   height: 50px;
   border: none;
-  background-color: #023047;
+  background-color: #457b9d;
   border-radius: 15px;
   cursor: pointer;
   color: #ffff;
 }
-
+.add {
+  width: 30px;
+  height: 30px;
+}
+.add-book {
+  width: 100%;
+  height: 100px;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.wrapper {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(150px, auto);
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  align-content: flex-start;
+}
+#cards__container {
+  display: none;
+}
+.card {
+  margin: 1.4rem auto;
+  width: 400px;
+  height: 200px;
+  color: #eee;
+  background-color: #457b9d;
+  border: 1px solid red;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-size: .85em;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+}
 .btn:hover {
   background-color: #219ebc;
   color: #ffff;
+  font-weight: 800;
 }
 
 .btn__submit {
@@ -104,18 +116,6 @@ footer {
   cursor: pointer;
   background-color: #219ebc;
   color: #fff;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 300px;
-  background-color: #023047;
-  border-radius: 50px;
-  color: #ffff;
-  /* transition: all 0.5s ease-out; */
 }
 
 .buttons {
@@ -142,96 +142,87 @@ footer {
   }
 }
 
-/* style the form input */
-#book,
-#name,
-#pages {
-  width: 60%;
-  height: 20px;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 50px;
-}
-
-#save,
-#data {
-  width: 120px;
-  height: 30px;
-  font-size: 18px;
-  background-color: #6366f1;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-#save:hover {
-  color: #ffff;
-}
-
-#data:hover {
-  color: #ffff;
-}
-
-.add {
-  width: 24px;
-  height: 24px;
-}
-.container {
-  display: none;
-}
-.form__container {
-  margin-top: 20px;
-  width: 80%;
-  height: fit-content;
-  display: block;
-  border: 1px solid red;
-  /* opacity: 0; */
-}
-.inputs {
-  width: 50%;
-  height: 1.5rem;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 5px;
-  background-color: #caf0f8;
-}
-/* styling the books container */
-#wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(150px, auto);
-  gap: 20px;
-  /* justify-content: space-between; */
-  /* border: 2px solid cyan; */
-  /* height: 100vh; */
-  margin-bottom: 1.5rem;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #d946ef;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  width: 18rem;
-  height: 13rem;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
-  /* border: 2px solid green; */
-}
-.box:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
-}
-#book__details {
-  list-style-type: none;
-  width: 80%;
-  /* border: 1px solid yellow; */
-  height: 13rem;
-}
-.books {
-  display: flex;
-  flex-direction: column;
-}
-.books .book_info {
-  margin-top: 1.2rem;
-}
+/* <main class="parent-container">
+    <div id="wrapper">
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <ul id="book__details">
+          <li class="books">
+            <span class="book_info">Title:</span>
+            <span class="book_info">Author's Name:</span>
+            <span class="book_info">Pages:</span>
+            <span class="book_info">have you read?:</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="section__1">
+      
+    </div>
+    <div class="section2__hidden">
+      <div class="container">
+        <form class="form">
+          <h2>Welcome, Please add your books</h2>
+          <input
+            type="text"
+            class="inputs"
+            id="book"
+            name="book"
+            placeholder="Enter Book Title"
+            required
+          />
+          <input
+            type="text"
+            class="inputs"
+            id="name"
+            name="author"
+            placeholder="Enter Author Name"
+            required
+          />
+          <input
+            type="number"
+            class="inputs"
+            id="pages"
+            name=""
+            placeholder="Enter the number of pages"
+            required
+          />
+          <label
+            >Have you read it?
+            <input type="checkbox" id="confirm" class="mycheckbox" />
+            <span id="checkboxLabel">No</span>
+          </label>
+          <button class="btn__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main> */
