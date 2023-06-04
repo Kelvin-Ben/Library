@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f1faee;
+  overflow-x: hidden;
 }
 #header {
   display: flex;
@@ -26,8 +27,21 @@ body {
   font-size: 20px;
   margin: 0 20px;
 }
-
-
+.hambuger {
+  width: 50px;
+  height: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.strip {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 3px auto;
+}
 
 footer {
   display: flex;
@@ -93,7 +107,7 @@ footer {
   border: 1px solid red;
   border-radius: 10px;
   line-height: 1.5;
-  font-size: .85em;
+  font-size: 0.85em;
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
@@ -103,19 +117,21 @@ footer {
 }
 
 .btn__submit {
-  background-color: #4cc9f0;
+  background-color: #457b9d;
   border: none;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 40px;
   border-radius: 15px;
   color: #ffff;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.56rem;
 }
 .btn__submit:hover {
   cursor: pointer;
-  background-color: #219ebc;
-  color: #fff;
+  background-color: #a8dadc;
+  color: #000;
+  font-weight: bold;
 }
 
 .buttons {
@@ -142,87 +158,99 @@ footer {
   }
 }
 
-/* <main class="parent-container">
-    <div id="wrapper">
-      <div class="box">
-        <ul id="book__details">
-          <li class="books">
-            <span class="book_info">Title:</span>
-            <span class="book_info">Author's Name:</span>
-            <span class="book_info">Pages:</span>
-            <span class="book_info">have you read?:</span>
-          </li>
-        </ul>
-      </div>
-      <div class="box">
-        <ul id="book__details">
-          <li class="books">
-            <span class="book_info">Title:</span>
-            <span class="book_info">Author's Name:</span>
-            <span class="book_info">Pages:</span>
-            <span class="book_info">have you read?:</span>
-          </li>
-        </ul>
-      </div>
-      <div class="box">
-        <ul id="book__details">
-          <li class="books">
-            <span class="book_info">Title:</span>
-            <span class="book_info">Author's Name:</span>
-            <span class="book_info">Pages:</span>
-            <span class="book_info">have you read?:</span>
-          </li>
-        </ul>
-      </div>
-      <div class="box">
-        <ul id="book__details">
-          <li class="books">
-            <span class="book_info">Title:</span>
-            <span class="book_info">Author's Name:</span>
-            <span class="book_info">Pages:</span>
-            <span class="book_info">have you read?:</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="section__1">
-      
-    </div>
-    <div class="section2__hidden">
-      <div class="container">
-        <form class="form">
-          <h2>Welcome, Please add your books</h2>
-          <input
-            type="text"
-            class="inputs"
-            id="book"
-            name="book"
-            placeholder="Enter Book Title"
-            required
-          />
-          <input
-            type="text"
-            class="inputs"
-            id="name"
-            name="author"
-            placeholder="Enter Author Name"
-            required
-          />
-          <input
-            type="number"
-            class="inputs"
-            id="pages"
-            name=""
-            placeholder="Enter the number of pages"
-            required
-          />
-          <label
-            >Have you read it?
-            <input type="checkbox" id="confirm" class="mycheckbox" />
-            <span id="checkboxLabel">No</span>
-          </label>
-          <button class="btn__submit" type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-  </main> */
+/* Styling the form */
+.form__container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.2rem;
+  /* border: 2px solid red; */
+  padding: 0.85rem;
+}
+.form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form > div {
+  width: 80%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #219ebc;
+  padding: 1.5rem;
+  border-radius: 50px;
+}
+.form_input {
+  width: 60%;
+  height: 1.5rem;
+  margin: 0.3rem auto;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.form > div > span {
+  border: 1px solid red;
+  padding: 0.58rem auto;
+}
+/* mobile resposiveness */
+@media screen and (max-width: 768px) {
+  #container-wrapper {
+    width: 99.5%;
+    height: auto;
+    border: 1px solid red;
+    overflow-x: hidden;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .form__container {
+    width: 92%;
+    border: 1px solid red;
+    height: auto;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form div {
+    width: 80%;
+    height: 200px;
+    line-height: 1.5rem;
+  }
+  .form_input {
+    width: 80%;
+    height: 1.5rem;
+    padding: 1px auto;
+  }
+  .form div h1 {
+    font-size: 14px;
+  }
+  .login {
+    display: none;
+  }
+  .hambuger {
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+  }
+  .form div span {
+    display: flex;
+    font-size: 0.85rem;
+  }
+}
