@@ -13,9 +13,9 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 80px;
-  background-color: #a8dadc;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
+  background-color: #f1faee;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
 }
 
 #title {
@@ -49,7 +49,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 150px;
-  background-color: #a8dadc;
+  background-color: #ccd5ae;
   width: 100%;
 }
 #footer {
@@ -67,7 +67,7 @@ footer {
   width: 200px;
   height: 50px;
   border: none;
-  background-color: #457b9d;
+  background-color: #000814;
   border-radius: 15px;
   cursor: pointer;
   color: #ffff;
@@ -79,14 +79,12 @@ footer {
 .add-book {
   width: 100%;
   height: 100px;
-  border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
 }
 .wrapper {
-  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(150px, auto);
@@ -100,29 +98,45 @@ footer {
 }
 .card {
   margin: 1.4rem auto;
-  width: 400px;
+  width: 300px;
   height: 200px;
   color: #eee;
-  background-color: #457b9d;
-  border: 1px solid red;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
   line-height: 1.5;
   font-size: 0.85em;
-  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-content {
+  padding: 16px;
+}
+
+.book-title {
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+.author,
+.pages {
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 16px;
 }
 .btn:hover {
-  background-color: #219ebc;
-  color: #ffff;
+  background-color: #e5e5e5;
+  color: #000;
   font-weight: 800;
 }
 
 .btn__submit {
-  background-color: #457b9d;
+  background-color: #ced4da;
   border: none;
   width: 120px;
   height: 40px;
   border-radius: 15px;
-  color: #ffff;
+  color: #000;
   line-height: 1.5;
   font-size: 1.2rem;
   margin-top: 0.56rem;
@@ -160,7 +174,8 @@ footer {
 
 /* Styling the form */
 .form__container {
-  display: none;
+  /* display: none; */
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -182,7 +197,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #219ebc;
+  background-color: #edede9;
   padding: 1.5rem;
   border-radius: 50px;
 }
@@ -190,11 +205,9 @@ footer {
   width: 60%;
   height: 1.5rem;
   margin: 0.3rem auto;
-  border: 1px solid red;
   border-radius: 10px;
 }
 .form > div > span {
-  border: 1px solid red;
   padding: 0.58rem auto;
 }
 /* mobile resposiveness */
@@ -202,7 +215,6 @@ footer {
   #container-wrapper {
     width: 99.5%;
     height: auto;
-    border: 1px solid red;
     overflow-x: hidden;
   }
   .wrapper {
@@ -217,7 +229,6 @@ footer {
   }
   .form__container {
     width: 92%;
-    border: 1px solid red;
     height: auto;
   }
   .form {
@@ -252,5 +263,29 @@ footer {
   .form div span {
     display: flex;
     font-size: 0.85rem;
+  }
+  footer h5 {
+    text-align: center;
+  }
+}
+/* media query for medium screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #container-wrapper {
+    width: 1024px;
+    overflow-x: hidden;
+  }
+  #header {
+    width: 100%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form__container {
+    border: 1px solid rebeccapurple;
+    width: 100%;
+  }
+  .form {
+    width: 80%;
   }
 }
