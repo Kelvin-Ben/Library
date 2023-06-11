@@ -26,33 +26,12 @@
       </header>
       <section class="main">
         <div class="wrapper">
-          <div class="card">
+          <!-- <div class="card">
             <div class="card-content">
               <h2 class="book-title">Book Title</h2>
               <p class="author">Author</p>
               <p class="pages">No of pages</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h2 class="book-title">Book Title</h2>
-              <p class="author">Author</p>
-              <p class="pages">No of pages</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h2 class="book-title">Book Title</h2>
-              <p class="author">Author</p>
-              <p class="pages">No of pages</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h2 class="book-title">Book Title</h2>
-              <p class="author">Author</p>
-              <p class="pages">No of pages</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="add-book">
@@ -73,20 +52,25 @@
               <input
                 type="text"
                 class="form_input"
+                id="book"
                 placeholder="Enter Name of the book"
                 required
               />
               <input
                 type="text"
                 class="form_input"
+                id="name"
                 placeholder="who is the author?"
+                required
               />
               <input
                 type="number"
                 class="form_input"
-                placeholder="how many pages deos it have?"
+                id="pages"
+                placeholder="how many pages does it have?"
+                required
               />
-              <span>
+              <span class="status">
                 <input type="checkbox" id="status" name="status" />
                 <label for="status">Have you read it?</label>
               </span>
