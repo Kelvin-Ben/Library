@@ -117,11 +117,18 @@ footer {
   padding: 16px;
 }
 .remove-btn {
-  width: 100px;
+  width: 80px;
   height: 30px;
   border: none;
-  background-color: #ccd5ae;
+  background-color: #000;
+  color: #eee;
+  font-weight: 600;
   border-radius: 10px;
+}
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: #ccd5ae;
+  color: #000;
 }
 .book-title {
   font-size: 24px;

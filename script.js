@@ -30,7 +30,7 @@ function addBookToLibrary(event) {
   inputBook.value = inputName.value = inputPage.value = inputConfirm.value = "";
 }
 
-function generateBookCard(book) {
+function generateBookCard(book, index) {
     // Create card div
     const card = document.createElement("div");
     card.classList.add("card")
@@ -54,7 +54,16 @@ function generateBookCard(book) {
   pages.classList.add("pages")
   pages.textContent = `${book.pages} pages`
 
- 
+  // create a button to remove each book
+  const removeBook = document.createElement("button");
+  removeBook.classList.add("remove-btn")
+  removeBook.textContent = "Remove";
+
+  // Add eventListener to the button
+  removeBook.addEventListener('click', () => {
+    removeBookFromLibrary(index);
+    card.remove();
+  })
   // Append elements to cardContent div
   cardContent.appendChild(title)
   cardContent.appendChild(author)
@@ -64,5 +73,8 @@ function generateBookCard(book) {
   card.appendChild(cardContent);
   
   return card 
+}
+function removeBookFromLibrary(index) {
+  myLibrary.splice(index, 1)
 }
 form.addEventListener("submit", addBookToLibrary);
