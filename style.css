@@ -109,9 +109,20 @@ footer {
   overflow: hidden;
 }
 .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 166px;
+  border-radius: 10px;
   padding: 16px;
 }
-
+.remove-btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #ccd5ae;
+  border-radius: 10px;
+}
 .book-title {
   font-size: 24px;
   margin: 0 0 8px;
@@ -143,7 +154,7 @@ footer {
 }
 .btn__submit:hover {
   cursor: pointer;
-  background-color: #a8dadc;
+  background-color: #ccd5ae;
   color: #000;
   font-weight: bold;
 }
