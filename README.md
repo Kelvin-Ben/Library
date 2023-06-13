@@ -4,6 +4,8 @@
 
 The Library Application is a web-based application built with JavaScript that allows users to create their personal library and manage their book collection. Users can log in, add books to their library, and view their stored books in their account.
 
+![library](https://github.com/Kelvin-Ben/Library/assets/85459676/cc31745f-4fb0-47f0-a2c9-e9393339db1e)
+
 ### Features
 
 - **User Authentication:** Users can create an account, log in, and securely manage their book collection.
