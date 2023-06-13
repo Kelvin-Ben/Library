@@ -15,7 +15,7 @@ The Library Application is a web-based application built with JavaScript that al
 
 ## Live Demo
 
-**After the project is completed, a live demo will be made available.**
+**To interact with the project click [here](https://add-book-to-library.netlify.app/)**
 
 ### Getting Started
 
