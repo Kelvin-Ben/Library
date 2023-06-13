@@ -1,7 +1,8 @@
-const addBook = document.querySelector(".add-book");
+const addBook = document.querySelector("#add-book");
 const checkBoxLabel = document.querySelector("#checkboxLabel");
 const form = document.querySelector(".form");
 const submitBook = document.querySelector(".btn__submit");
+const formContainer = document.querySelector(".form__container");
 
 const inputBook = document.getElementById("book");
 const inputName = document.getElementById("name");
@@ -9,6 +10,14 @@ const inputPage = document.getElementById("pages");
 const inputConfirm = document.querySelector("#status");
 
 const container = document.querySelector(".wrapper");
+
+addBook.addEventListener("click", () => {
+  form.style.display = "flex";
+});
+
+const hideForm = function () {
+  form.style.display = "none";
+};
 
 let myLibrary = [];
 function addBookToLibrary(event) {
@@ -27,6 +36,7 @@ function addBookToLibrary(event) {
   const bookCard = generateBookCard(book, myLibrary.length - 1);
   container.appendChild(bookCard);
   inputBook.value = inputName.value = inputPage.value = "";
+  hideForm();
 }
 
 function generateBookCard(book, index) {
